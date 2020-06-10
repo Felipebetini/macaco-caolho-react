@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Press+Start+2P&display=swap");
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.welcome {
+  text-align: center;
+}
+
+#paper1 {
+  font-family: "Press Start 2P", cursive;
+  color: #9e0018;
+}
+
+#paper2 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+.aboutUs {
+  color: black;
+  text-align: center;
+  background-color: blueviolet;
+}
