@@ -1,20 +1,25 @@
 import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  paper1: {
+  headerMacaco: {
     padding: theme.spacing(2),
     textAlign: "center",
   },
-  paper2: {
+  headerRock: {
     padding: theme.spacing(2),
     textAlign: "center",
+  },
+  grid: {
+    height: 1000,
+    alignItems: "center",
+    background:
+      "linear-gradient(to bottom, #ff4530 10%,#ff8e53 29%,#ffffff 100%)",
   },
 }));
 
@@ -25,10 +30,14 @@ export default function Header() {
     <Grid container className={classes.grid}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Grid id="paper1" className={classes.paper1} component="h1">
-            Macaco caolho
+          <Grid
+            id="headerMacaco"
+            className={classes.headerMacaco}
+            component="h1"
+          >
+            Macaco Caolho
           </Grid>
-          <Grid id="paper2" className={classes.paper2} component="h1">
+          <Grid id="headerRock" className={classes.headerRock} component="h1">
             Rock N' Drinks
           </Grid>
         </Grid>

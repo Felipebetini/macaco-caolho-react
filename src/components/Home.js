@@ -1,7 +1,15 @@
 import React from "react";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import {
+  deepOrange,
+  red,
+  purple,
+  green,
+  orange,
+} from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -9,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "0px",
     textAlign: "center",
     fontSize: "20px",
+    background: "linear-gradient(to top, #ff4530 30%, #FF8E53 90%)",
+    height: 500,
+    alignItems: "center",
   },
   Grid: {
     textAlign: "center",
@@ -17,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Home() {
   const classes = useStyles();
+
   return (
     <Grid container className={classes.grid}>
       <Grid item xs={12}>

@@ -12,7 +12,8 @@ const useStyles = makeStyles({
     marginRight: "auto",
   },
   media: {
-    height: 140,
+    height: 180,
+    marginTop: 300,
   },
 });
 
@@ -20,7 +21,7 @@ export default function MediaCard() {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12}>
+    <Grid item xs={12} className={classes.Grid}>
       <Card className={classes.root}>
         <CardMedia className={classes.media} image={mascote} />
       </Card>
